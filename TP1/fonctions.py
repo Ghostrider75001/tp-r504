@@ -1,4 +1,4 @@
 def puissance(a, b):
-	result = int(a**b)
-	print(result)
-
+	result = float(a**b)
+	return result
+ 
