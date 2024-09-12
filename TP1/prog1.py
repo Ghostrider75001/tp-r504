@@ -1,13 +1,12 @@
 import fonctions as f
+import math
 
 print ("Hello, World !")
 
-def CARRE():
-  a = int(input("Nombre a élevé : "))
-  b = int(input("exposant : "))
-  res = f.puissance(a, b)
-
 
 while True:
-  CARRE()
+  a = float(input("Nombre a élevé : "))
+  b = float(input("exposant : "))
+  res = f.puissance(a, b)
+  print(f"{A} élevé à la puissance {B} est : {R}")
 
