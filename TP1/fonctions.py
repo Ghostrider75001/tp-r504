@@ -5,9 +5,10 @@ def puissance(a, b):
 		R = 1
 		if b >=0 :
 			for i in range (b):
-				R *= a
+				R *= round(a, 5)
 		else:
-			R /= a
+			R /= round(a, 5)
 	else:
 		R = math.exp(b * math.log(a))
+		R = round(R, 5)
 	return R 
