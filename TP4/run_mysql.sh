@@ -1,1 +1,1 @@
-docker run -d --name MysqlServeur -p 3307:3306 -e MYSQL_ROOT_PASSWORD=root mysql:latest
+docker run -d -v vol-sql-demo:/var/lib/mysql --name tp4-sql -p 3307:3306 -e MYSQL_ROOT_PASSWORD=root mysql:latest --network net-tp4

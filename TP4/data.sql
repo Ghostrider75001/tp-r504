@@ -1,0 +1,13 @@
+CREATE DATABASE demosql;
+USE demosql;
+CREATE TABLE myTable(id int AUTO_INCREMENT, name varchar(45) NOT NULL, PRIMARY KEY (id) );
+INSERT INTO myTable (id, name) VALUES (NULL, 'bob');
+INSERT INTO myTable (id, name) VALUES (NULL, 'julia');
+INSERT INTO myTable (id, name) VALUES (NULL, 'erwran');
+INSERT INTO myTable (id, name) VALUES (NULL, 'alicia');
+INSERT INTO myTable (id, name) VALUES (NULL, 'wukong');
+INSERT INTO myTable (id, name) VALUES (NULL, 'fuban');
+INSERT INTO myTable (id, name) VALUES (NULL, 'kratos');
+INSERT INTO myTable (id, name) VALUES (NULL, 'atreus');
+INSERT INTO myTable (id, name) VALUES (NULL, 'mungir');
+INSERT INTO myTable (id, name) VALUES (NULL, 'sofiane');
