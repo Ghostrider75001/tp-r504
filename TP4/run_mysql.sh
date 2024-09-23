@@ -1,1 +1,9 @@
-docker run -d -v vol-sql-demo:/var/lib/mysql --name tp4-sql -p 3307:3306 -e MYSQL_ROOT_PASSWORD=root mysql:latest --network net-tp4
+docker run \
+    --name tp4-mariadb \
+    --network net-tp4 \
+    -e MARIADB_ROOT_PASSWORD=root\
+    -v data_mdb:/var/lib/mysql \
+    -p 3307:3306 \
+    -d \
+    mariadb:11.2
+mysql:8.0

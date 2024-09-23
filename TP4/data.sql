@@ -1,3 +1,4 @@
+DROP DATABASE demosql;
 CREATE DATABASE demosql;
 USE demosql;
 CREATE TABLE myTable(id int AUTO_INCREMENT, name varchar(45) NOT NULL, PRIMARY KEY (id) );
