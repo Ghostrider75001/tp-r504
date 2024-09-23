@@ -9,6 +9,7 @@ RUN apt update && apt upgrade -y && \
 
 # Mise à jour de pip et installation des paquets Python neccessaires
 RUN pip3 install --upgrade pip && \
+    pip3 install mariadb && \
     pip3 install flask-mysqldb mysql-connector-python 
 
 # Création du dossier /srv/templates et copie du fichier index.html

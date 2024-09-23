@@ -6,4 +6,3 @@ docker run \
     -p 3307:3306 \
     -d \
     mariadb:11.2
-mysql:8.0

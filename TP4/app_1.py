@@ -1,18 +1,24 @@
 from flask import Flask, render_template
-import mysql.connector
+import mariadb
 
 app = Flask(__name__)
  
 # MySQL configuration
-db_config = {
-    'host': 'tp4-mariadb',
-    'user': 'root',
-    'password': 'root',
-    'database': 'demosql'
-}
+#db_config = {
+#    'host': 'tp4-mariadb',
+#    'user': 'root',
+#    'password': 'root',
+#    'database': 'demosql'
+#}
 
 # Initialize MySQL connection
-conn = mysql.connector.connect(**db_config)
+conn = mariadb.connect(
+        user="root",
+        password="root",
+        host="tp4-mariadb",
+        port=3307,
+        database="demosql"
+        )
 cursor = conn.cursor() 
 
 
