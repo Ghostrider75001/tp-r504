@@ -31,7 +31,7 @@ def index():
     cursor.execute(query)
     data = cursor.fetchall()
     
-    #Close the cursor and connection
+    # Close the cursor and connection
     #cursor.close()
     #conn.close()
     

@@ -13,11 +13,11 @@ RUN pip3 install --upgrade pip && \
     pip3 install flask-mysqldb mysql-connector-python 
 
 # Création du dossier /srv/templates et copie du fichier index.html
-RUN mkdir -p /srv/templates
-COPY index.html /srv/templates/
+#RUN mkdir -p /srv/templates
+#COPY index.html /srv/templates/
 
 #Copie du fichier app.py dans le dossier /srv/
-COPY app_1.py /srv/
+#COPY app_1.py /srv/
 
 # Lancement de Flask en indiquant le programme à exécuter
 CMD ["flask","--app","/srv/app_1","run","--host=0.0.0.0", "--debug"]
