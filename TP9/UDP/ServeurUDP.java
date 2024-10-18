@@ -1,3 +1,4 @@
+
 import java.io.*;
 import java.net.*;
 
@@ -16,9 +17,7 @@ public class ServeurUDP
 				String str = new String(packet.getData());
 				System.out.println( "str= " + str);
 
-				byte[] data = str.getBytes ( );
-				DatagramPacket packet2 = new DatagramPacket(data, data.length, packet.getAddress(), 1234);
-				sock.send(packet2);
+				sock.send(packet);
 				sock.close();
 			}
 			catch (Exception ex) 
